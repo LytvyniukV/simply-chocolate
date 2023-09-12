@@ -478,7 +478,7 @@ button {
 }
 .ingridients-items {
   border-radius: 15px;
-  padding: 28px 23px;
+  padding: 32px 50px 28px 50px;
   position: relative;
 }
 .ingridients-name {
@@ -554,6 +554,7 @@ button {
   }
   .ingridients-items {
     width: calc((100% - 96px) / 4);
+    padding: 28px 23px;
   }
 }
 /* HOW ITS MADE SECTION */
