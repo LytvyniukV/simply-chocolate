@@ -172,10 +172,7 @@
             </li>
             <li class="ingridients-items white-card">
               <img
-                srcset="
-                  ./Images/ingredients/milk.png    1x,
-                  ./Images/ingredients/milk@2x.png 2x
-                "
+                srcset="./Images/ingredients/milk@2x.png 2x"
                 src="./Images/ingredients/milk.png"
                 alt="milk"
                 width="214"
@@ -190,10 +187,7 @@
             </li>
             <li class="ingridients-items black-card">
               <img
-                srcset="
-                  ./Images/ingredients/nuts.png    1x,
-                  ./Images/ingredients/nuts@2x.png 2x
-                "
+                srcset="./Images/ingredients/nuts@2x.png 2x"
                 src="./Images/ingredients/nuts.png"
                 alt="nuts"
                 width="214"
@@ -208,10 +202,7 @@
             </li>
             <li class="ingridients-items white-card">
               <img
-                srcset="
-                  ./Images/ingredients/semi-sweet-chok.png    1x,
-                  ./Images/ingredients/semi-sweet-chok@2x.png 2x
-                "
+                srcset="./Images/ingredients/semi-sweet-chok@2x.png 2x"
                 src="./Images/ingredients/semi-sweet-chok.png"
                 alt="semi-sweet chocolate"
                 width="214"
@@ -226,10 +217,7 @@
             </li>
             <li class="ingridients-items orange-card">
               <img
-                srcset="
-                  ./Images/ingredients/cacao.png    1x,
-                  ./Images/ingredients/cacao@2x.png 2x
-                "
+                srcset="./Images/ingredients/cacao@2x.png 2x"
                 src="./Images/ingredients/cacao.png"
                 alt="cacao"
                 width="214"
@@ -244,10 +232,7 @@
             </li>
             <li class="ingridients-items white-card">
               <img
-                srcset="
-                  ./Images/ingredients/rapberry.png     1x,
-                  ./Images/ingredients/raspberry@2x.png 2x
-                "
+                srcset="./Images/ingredients/raspberry@2x.png 2x"
                 src="./Images/ingredients/rapberry.png"
                 alt="raspberry"
                 width="214"
@@ -262,10 +247,7 @@
             </li>
             <li class="ingridients-items black-card">
               <img
-                srcset="
-                  ./Images/ingredients/coconut.png    1x,
-                  ./Images/ingredients/coconut@2x.png 2x
-                "
+                srcset="./Images/ingredients/coconut@2x.png 2x"
                 src="./Images/ingredients/coconut.png"
                 alt="coconut oil"
                 width="214"
@@ -289,7 +271,13 @@
           </h2>
           <div class="how-made-container">
             <img
-              srcset="./Images/image.jpg 1x, ./Images/image@2x.jpg 2x"
+              srcset="
+                ./Images/image-mobile.png     335w,
+                ./Images/image-mobile@2x.png  670w,
+                ./Images/image.jpg            600w,
+                ./Images/image.jpg           1200w
+              "
+              sizes="(min-width: 768px) 600w, (max-width: 767px) 335w"
               src="./Images/image.jpg"
               alt="how is made chocolate"
               width="600"
@@ -806,53 +794,49 @@
 
     <!-- MOBILE MENU -->
     <div class="mobile-menu-wrap is-hidden" data-second-modal>
-    
-        <button class="close-menu-btn" data-second-modal-close>
-          <svg class="icon-close-mobile" width="28" height="28">
-            <use href="./Images/sprite.svg#icon-x-close"></use>
-          </svg>
-        </button>
-    
-          <ul class="navigation-list-mobile list">
-            <li>
-              <a class="navigation-links-mobile" href="./index.html">Home</a>
-            </li>
-            <li>
-              <a class="navigation-links-mobile" href="#how-its-made"
-                >How it’s made?</a
-              >
-            </li>
-            <li>
-              <a class="navigation-links-mobile" href="#team"
-                >Chocolate is loved</a
-              >
-            </li>
-          </ul>
-        
-        <ul class="social-list-mobile list">
-          <li>
-            <a class="social-icon-link-mobile" href="">
-              <svg class="social-icons-mobile" width="24" height="24">
-                <use href="./Images/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="social-icon-link-mobile" href="">
-              <svg class="social-icons-mobile" width="24" height="24">
-                <use href="./Images/sprite.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="social-icon-link-mobile" href="">
-              <svg class="social-icons-mobile" width="24" height="24">
-                <use href="./Images/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      
+      <button class="close-menu-btn" data-second-modal-close>
+        <svg class="icon-close-mobile" width="28" height="28">
+          <use href="./Images/sprite.svg#icon-x-close"></use>
+        </svg>
+      </button>
+
+      <ul class="navigation-list-mobile list">
+        <li>
+          <a class="navigation-links-mobile" href="./index.html">Home</a>
+        </li>
+        <li>
+          <a class="navigation-links-mobile" href="#how-its-made"
+            >How it’s made?</a
+          >
+        </li>
+        <li>
+          <a class="navigation-links-mobile" href="#team">Chocolate is loved</a>
+        </li>
+      </ul>
+
+      <ul class="social-list-mobile list">
+        <li>
+          <a class="social-icon-link-mobile" href="">
+            <svg class="social-icons-mobile" width="24" height="24">
+              <use href="./Images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-icon-link-mobile" href="">
+            <svg class="social-icons-mobile" width="24" height="24">
+              <use href="./Images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-icon-link-mobile" href="">
+            <svg class="social-icons-mobile" width="24" height="24">
+              <use href="./Images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
     <script src="./js/script.js"></script>
   </body>
