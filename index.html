@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/index.css">
   </head>
   <body>
     <!-- HEADER -->
@@ -149,7 +149,7 @@
         </div>
       </section>
       <!-- INGREDIENTS -->
-      <section class="ingridients-section">
+      <section class="ingridients-section section">
         <div class="container ingridients">
           <h2 class="ingridients-title">
             It all adds up to one exceptional
@@ -264,7 +264,7 @@
         </div>
       </section>
       <!-- HOW ITS MADE SECTION -->
-      <section class="how-its-made-section" id="how-its-made">
+      <section class="how-its-made-section section" id="how-its-made">
         <div class="container">
           <h2 class="how-made-title">
             How it’s <span class="accent">made</span>?
@@ -272,12 +272,14 @@
           <div class="how-made-container">
             <img
               srcset="
-                ./Images/image-mobile.png     335w,
-                ./Images/image-mobile@2x.png  670w,
-                ./Images/image.jpg            600w,
-                ./Images/image.jpg           1200w
+                ./Images/image-mobile.png      335w,
+                ./Images/image-mobile@2x.png   670w,
+                ./Images/image-tablet.png      614w,
+                ./Images/image-tablet@2x.png  1228w,
+                ./Images/image-desktop.jpg     600w,
+                ./Images/image-desktop@2x.jpg 1200w
               "
-              sizes="(min-width: 768px) 600w, (max-width: 767px) 335w"
+              sizes="(min-width: 1200px) 600px, (min-width: 768px) 614px, (max-width: 767px) 335px"
               src="./Images/image.jpg"
               alt="how is made chocolate"
               width="600"
@@ -326,7 +328,7 @@
         </div>
       </section>
       <!-- OUR PRODUCTS -->
-      <section class="products-section" id="our-products">
+      <section class="products-section section" id="our-products">
         <div class="container">
           <h2 class="products-title">
             Our <span class="accent">products</span>
@@ -334,10 +336,7 @@
           <ul class="products-list">
             <li class="products-items">
               <img
-                srcset="
-                  ./Images/our-products/orange.jpg    1x,
-                  ./Images/our-products/orange@2x.jpg 2x
-                "
+                srcset="./Images/our-products/orange@2x.jpg 2x"
                 src=""
                 alt="orange"
                 width="230"
@@ -349,10 +348,7 @@
             </li>
             <li class="products-items">
               <img
-                srcset="
-                  ./Images/our-products/apple-cranb.jpg    1x,
-                  ./Images/our-products/apple-cranb@2x.jpg 2x
-                "
+                srcset="./Images/our-products/apple-cranb@2x.jpg 2x"
                 src="./Images/our-products/apple-cranb.jpg"
                 alt="apple and cranberry"
                 width="230"
@@ -364,10 +360,7 @@
             </li>
             <li class="products-items">
               <img
-                srcset="
-                  ./Images/our-products/lime-salt.jpg    1x,
-                  ./Images/our-products/lime-salt@2x.jpg 2x
-                "
+                srcset="./Images/our-products/lime-salt@2x.jpg 2x"
                 src="./Images/our-products/lime-salt.jpg"
                 alt="lime and sea salt"
                 width="230"
@@ -379,10 +372,7 @@
             </li>
             <li class="products-items">
               <img
-                srcset="
-                  ./Images/our-products/pineapple.jpg    1x,
-                  ./Images/our-products/pineapple@2x.jpg 2x
-                "
+                srcset="./Images/our-products/pineapple@2x.jpg 2x"
                 src="./Images/our-products/pineapple.jpg"
                 alt="pineapple"
                 width="230"
@@ -394,10 +384,7 @@
             </li>
             <li class="products-items">
               <img
-                srcset="
-                  ./Images/our-products/classic-milk.jpg    1x,
-                  ./Images/our-products/classic-milk@2x.jpg 2x
-                "
+                srcset="./Images/our-products/classic-milk@2x.jpg 2x"
                 src="./Images/our-products/classic-milk.jpg"
                 alt="classic milk chocolate"
                 width="230"
@@ -409,10 +396,7 @@
             </li>
             <li class="products-items">
               <img
-                srcset="
-                  ./Images/our-products/honey.jpg    1x,
-                  ./Images/our-products/honey@2x.jpg 2x
-                "
+                srcset="./Images/our-products/honey@2x.jpg 2x"
                 src="./Images/our-products/honey.jpg"
                 alt="honey"
                 width="230"
@@ -424,10 +408,7 @@
             </li>
             <li class="products-items">
               <img
-                srcset="
-                  ./Images/our-products/fruits.jpg    1x,
-                  ./Images/our-products/fruits@2x.jpg 2x
-                "
+                srcset="./Images/our-products/fruits@2x.jpg 2x"
                 src="./Images/our-products/fruits.jpg"
                 alt="roasted fruits"
                 width="230"
@@ -439,10 +420,7 @@
             </li>
             <li class="products-items">
               <img
-                srcset="
-                  ./Images/our-products/white-chocolate.jpg    1x,
-                  ./Images/our-products/white-chocolate@2x.jpg 2x
-                "
+                srcset="./Images/our-products/white-chocolate@2x.jpg 2x"
                 src="./Images/our-products/white-chocolate.jpg"
                 alt="classic white chocolate"
                 width="230"
@@ -456,17 +434,14 @@
         </div>
       </section>
       <!-- TOP SELLERS SECTION -->
-      <section class="sellers-section">
+      <section class="sellers-section section">
         <div class="container">
           <h2 class="sellers-title"><span class="accent">Top</span> sellers</h2>
           <ul class="sellers-list list">
             <li class="sellers-items">
               <div class="overlay-wrapper">
                 <img
-                  srcset="
-                    ./Images/top-sellers/with-nuts.jpg    1x,
-                    ./Images/top-sellers/with-nuts@2x.jpg 2x
-                  "
+                  srcset="./Images/top-sellers/with-nuts@2x.jpg 2x"
                   src="./Images/top-sellers/with-nuts.jpg"
                   alt="chocolate with nuts"
                   width="368"
@@ -486,10 +461,7 @@
             <li class="sellers-items no-shown">
               <div class="overlay-wrapper">
                 <img
-                  srcset="
-                    ./Images/top-sellers/with-fruits.jpg    1x,
-                    ./Images/top-sellers/with-fruits@2x.jpg 2x
-                  "
+                  srcset="./Images/top-sellers/with-fruits@2x.jpg 2x"
                   src="./Images/top-sellers/with-fruits.jpg"
                   alt="chocolate with fruits"
                   width="368"
@@ -508,10 +480,7 @@
             <li class="sellers-items">
               <div class="overlay-wrapper">
                 <img
-                  srcset="
-                    ./Images/top-sellers/dark-chocolate.jpg    1x,
-                    ./Images/top-sellers/dark-chocolate@2x.jpg 2x
-                  "
+                  srcset="./Images/top-sellers/dark-chocolate@2x.jpg 2x"
                   src="./Images/top-sellers/dark-chocolate.jpg"
                   alt="dark chocolate"
                   width="368"
@@ -532,7 +501,7 @@
         </div>
       </section>
       <!-- Reviews -->
-      <section class="review-section" id="team">
+      <section class="review-section section" id="team">
         <div class="container">
           <h2 class="review-title">
             <span class="accent">Chocolate</span> is loved
@@ -541,6 +510,7 @@
             <li class="review-items">
               <img
                 class="review-image"
+                srcset="./Images/icons-team/victoria@2x.png 2x"
                 src="./Images/icons-team/victoria.png"
                 alt="Victoria Dobrzhanska"
                 width="80"
@@ -556,6 +526,7 @@
             <li class="review-items">
               <img
                 class="review-image"
+                srcset="./Images/icons-team/nazar@2x.png 2x"
                 src="./Images/icons-team/nazar.png"
                 alt="Nazar Babenko"
                 width="80"
@@ -572,6 +543,7 @@
             <li class="review-items no-shown">
               <img
                 class="review-image"
+                srcset="./Images/icons-team/olena@2x.png 2x"
                 src="./Images/icons-team/olena.png"
                 alt="Olena Kampusch"
                 width="80"
@@ -784,8 +756,10 @@
                 <use href="./Images/sprite.svg#icon-accept"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the &nbsp;
+            <span class="checkbox-text">
+            I accept the terms and conditions of the
             <a class="privacy-link" href="">Privacy Policy</a>
+          </span>
           </label>
           <button class="btn-submit-modal" type="submit">Send</button>
         </form>

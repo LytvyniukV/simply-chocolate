@@ -1,0 +1,96 @@
+.benefits-section {
+    background: #1e1823;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    margin-top: 80px;
+  }
+  
+  .benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+  }
+  
+  .benefits-items {
+    flex-basis: calc((100% - 176px) / 3);
+  }
+  
+  .benefits-icons-wrapper {
+    width: 62px;
+    height: 62px;
+    border-radius: 365px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+  }
+  .benefits-title {
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 18px;
+  }
+  .benefits-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+  }
+  
+  /* =========================================TABLET============================================ */
+  @media screen and (min-width: 768px) {
+    .benefits-list {
+      flex-flow: row wrap;
+      column-gap: 88px;
+      row-gap: 44px;
+    }
+    .benefits-section {
+      padding: 50px auto;
+      margin-top: 40px;
+      margin-bottom: 50px;
+    }
+    .benefits-items {
+      flex-basis: calc((100% - 88px) / 2);
+    }
+  }
+
+    /* =========================================DESKTOP============================================ */
+
+  @media screen and (min-width: 1200px) {
+    .benefits-list {
+      flex-wrap: nowrap;
+      gap: 88px;
+    }
+    .benefits-section {
+      padding: 50px auto;
+      margin-top: 80px;
+      margin-bottom: 60px;
+    }
+    .benefits-items {
+      flex-basis: calc((100% - 176px) / 3);
+      position: relative;
+    }
+    .center-item::before {
+      width: 1px;
+      height: 124px;
+      background: rgba(255, 255, 255, 0.5);
+      content: '';
+      position: absolute;
+      left: -44px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .center-item::after {
+      width: 1px;
+      height: 124px;
+      background: rgba(255, 255, 255, 0.5);
+      content: '';
+      position: absolute;
+      right: -44px;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+  }

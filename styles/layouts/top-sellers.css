@@ -1,0 +1,93 @@
+
+  .sellers-title {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .sellers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .sellers-text {
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 28px 0;
+    border-radius: 0px 0px 15px 15px;
+    border-right: 1px solid rgba(17, 17, 17, 0.1);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+    border-left: 1px solid rgba(17, 17, 17, 0.1);
+    background: var(--secondary-color);
+  }
+  .overlay-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    );
+  
+    transform: translateY(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 178px 40px;
+    transition: transform 250ms ease-in-out;
+    border-radius: 15px;
+    backdrop-filter: blur(7.5px);
+  }
+  .sellers-items:hover .overlay,
+  .sellers-items:focus .overlay {
+    transform: translateY(0);
+  }
+  
+  /* ======================================TABLET================================ */
+  @media screen and (min-width: 768px) {
+    
+    .sellers-title {
+      font-size: 24px;
+      line-height: 1.16;
+      letter-spacing: -0.03em;
+      margin-bottom: 50px;
+    }
+    .sellers-list {
+      flex-flow: row;
+    }
+    .no-shown {
+      display: none;
+    }
+  }
+  
+    /* ======================================DESKTOP================================ */
+
+  @media screen and (min-width: 1200px) {
+    
+    .sellers-list {
+      flex-wrap: nowrap;
+    }
+    .no-shown {
+      display: block;
+    }
+  }

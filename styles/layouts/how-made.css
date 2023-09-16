@@ -1,0 +1,78 @@
+
+  .how-made-title {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  .how-made-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .how-made-description {
+    padding: 20px 14px;
+    border-radius: 15px;
+    background: #fff;
+    flex-grow: 1;
+  }
+  .how-made-list-title {
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    margin-bottom: 20px;
+    max-width: 307px;
+  }
+  .how-made-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-left: 16px;
+  }
+  .how-made-text {
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    margin-left: 8px;
+  }
+  
+    /* =======================================TABLET================================== */
+
+  @media screen and (min-width: 768px) {
+    
+    .how-made-title {
+      font-size: 24px;
+      line-height: 1.16;
+      letter-spacing: -0.03em;
+      margin-bottom: 50px;
+    }
+    .how-made-list-title {
+      margin-bottom: 28px;
+      max-width: 350px;
+    }
+    .how-made-container > img {
+      height: 400px;
+    }
+    .how-made-description {
+      padding: 32px;
+    }
+  }
+  
+    /* =======================================DESKTOP================================== */
+
+  @media screen and (min-width: 1200px) {
+    
+    .how-made-container {
+      flex-direction: row;
+    }
+  }
+  
+  

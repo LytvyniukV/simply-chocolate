@@ -1,0 +1,110 @@
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  display: flex;
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+  align-items: center;
+  margin-right: 47px;
+}
+.logo-icon {
+  margin-left: 4px;
+}
+
+/* ================MOBILE=================== */
+@media screen and (max-width: 767px) {
+  .social-list {
+    display: none;
+  }
+
+  .page-nav {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+  }
+}
+
+/* ================TABLET=================== */
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
+  .social-list {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-left: auto;
+  }
+  .navigation-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    max-width: 312px;
+  }
+
+  .navigation-links {
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+  }
+
+  .navigation-links:hover,
+  .navigation-links:focus {
+    color: var(--color-accent);
+  }
+
+  .social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    width: 40px;
+    height: 40px;
+    transition: border-color 250ms ease-in-out;
+  }
+
+  .social-icons-header {
+    transition: fill 250ms ease-in-out;
+  }
+  .social-icon-link:hover,
+  .social-icon-link:focus {
+    border-color: rgba(253, 146, 34, 0.1);
+  }
+  .social-icon-link:hover .social-icons-header,
+  .social-icon-link:focus .social-icons-header {
+    fill: var(--color-accent);
+  }
+}
+
+/* ================DESKTOP=================== */
+@media screen and (min-width: 1200px) {
+  .navigation-list {
+    gap: 24px;
+    max-width: 320px;
+  }
+  .logo-header {
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    margin-right: 365px;
+  }
+}
